@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+}
+.child{
+    padding: 10%;
+}
+.container:hover{
+    animation: thezm 2s infinite;
+}
+.child:hover{
+    animation: ouzm 2s infinite;
+}
+@keyframes ouzm {
+    50%{box-shadow: 5px 5px 5px 5px #ff4c68;}
+}
+@media (max-width:1024px) {
+    .child{
+        padding: 20%;
+    }
+}
